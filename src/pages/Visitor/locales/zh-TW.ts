@@ -1,0 +1,18 @@
+export default {
+  'visitor.monitor.trading-activity': '活動實時交易情況',
+  'visitor.monitor.total-transactions': '今日交易總額',
+  'visitor.monitor.sales-target': '銷售目標完成率',
+  'visitor.monitor.remaining-time': '活動剩余時間',
+  'visitor.monitor.total-transactions-per-second': '每秒交易總額',
+  'visitor.monitor.activity-forecast': '活動情況預測',
+  'visitor.monitor.efficiency': '券核效率',
+  'visitor.monitor.ratio': '跳出率',
+  'visitor.monitor.proportion-per-category': '各品類占比',
+  'visitor.monitor.fast-food': '中式快餐',
+  'visitor.monitor.western-food': '西餐',
+  'visitor.monitor.hot-pot': '火鍋',
+  'visitor.monitor.waiting-for-implementation': 'Waiting for implementation',
+  'visitor.monitor.popular-searches': '熱門搜索',
+  'visitor.monitor.resource-surplus': '資源剩余',
+  'visitor.monitor.fund-surplus': '補貼資金剩余',
+};

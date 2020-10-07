@@ -1,0 +1,51 @@
+@import '~antd/es/style/themes/default.less';
+.chatMain{
+    height: 100%;
+}
+.siderHead{
+    height: 50px;
+    background: @component-background;
+    border-bottom: 1px solid #eee;
+    padding: 0px 15px;
+}
+.siderContent{
+    height: calc(100% - 50px);
+    background: @component-background;
+    overflow: auto;
+}
+.siderFooter{
+    height: 35px;
+    border-top: 1px solid #eee;
+    button{height: 100%;}
+}
+
+.filterForm{
+    padding: 20px;
+    overflow: auto;
+}
+
+.chatItem{
+    padding: 8px 10px !important;
+    transition: .2s;
+    cursor: pointer;
+    position: relative;
+    &:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        border-right: 3px solid @primary-color;
+        transform: scaleY(0.0001);
+        opacity: 0;
+        transition: transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+        content: '';
+    }
+    &:hover, &.active{
+        background-color: #e6f7ff;
+    }
+    &.active:after{
+        transform: scaleY(1);
+        opacity: 1;
+        transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+}
